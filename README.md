@@ -5,7 +5,7 @@
 I love the idea of [endlessh](https://github.com/skeeto/endlessh), but I want to keep my SSH server running on port 22.
 At the same time, I like to waste the time of people with malicious intent.
 
-This led me to write this short config for fail2ban that will, instead of banning the IP that has mistreated you, redirects all its traffic to a locally running instance of endlessh.
+This led me to write this short config for fail2ban that will, instead of banning the IP that has mistreated you, redirect all its traffic to a locally running instance of endlessh and keep wasting its time.
 
 While this method is not as effective as endlessh itself, it serves as a good middle ground and requires very minor modifications to your system.
 
