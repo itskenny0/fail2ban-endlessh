@@ -13,10 +13,10 @@ While this method is not as effective as endlessh itself, it serves as a good mi
 
 This tutorial is assuming you are using a systemd-based Debian/Ubuntu/familiars distribution. The principle should be the same for other distros, but the paths might be different.
 
-* Install endlessh on your local machine and have it listen at port 2222 (default) or change the port in `action.d/endlessh.conf`.
+* Install endlessh locally and have it listen at port 2222 (default) or change the port in `action.d/endlessh.conf`.
 * Copy `action.d/endlessh.conf` to `/etc/fail2ban/action.d/endlessh.conf`
 * Copy `jail.d/endlessh.conf` to `/etc/fail2ban/jail.d/endlessh.conf`
-* Execute `systemctl reload fail2ban.service`
+* Execute `systemctl restart fail2ban.service`
 
 ## Credits
 * Thanks to Chris Wellons (@skeeto) for [endlessh](https://github.com/skeeto/endlessh) and [his blog post about it](https://nullprogram.com/blog/2019/03/22/)
